@@ -106,9 +106,12 @@ export const filterAndSortProducts = (
           return product.type === filterOption;
         });
 
-  const filteredByQuery = filteredByType.filter((product) =>
-    product.title.includes(query),
-  );
+  const filteredByQuery = filteredByType.filter((product) => {
+    const title = product.title.toLowerCase();
+    const preparedQuery = query.trim().toLowerCase();
+
+    return title.includes(preparedQuery);
+  });
 
   const filteredAndSorted = filteredByQuery.sort((product1, product2) => {
     switch (sortOption) {
