@@ -1,0 +1,22 @@
+.orders-page-content {
+  display: flex;
+  gap: 20px;
+}
+
+.orders-list {
+  min-width: 480px;
+}
+
+.order-products-container {
+  padding: 1rem 0;
+}
+
+.order-products-container {
+  overflow: hidden;
+  max-height: 0;
+}
+
+.order-products-container.open {
+  max-height: 1000px;
+  transition: max-height 0.9s ease-in-out;
+}

@@ -1,0 +1,94 @@
+@import 'src/styles/utils/custom-variables';
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+.order {
+  position: relative;
+  min-height: 70px;
+  min-width: 600px;
+  padding-left: 2em;
+  padding-right: 2em;
+  gap: 2em;
+  transition: all 0.6s;
+
+  > * {
+    flex-shrink: 0;
+    flex-grow: 0;
+  }
+
+  &__title {
+    flex: 1 1 auto;
+    font-size: 18px;
+    text-decoration: underline;
+    text-decoration-color: $color-light-grey;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-font-hover;
+    }
+  }
+
+  &__products-quantity {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    flex-basis: 150px;
+    cursor: pointer;
+  }
+
+  &__date {
+    flex-basis: 150px;
+  }
+
+  &__total {
+    flex-basis: 10%;
+  }
+
+  &__product-arrow {
+    cursor: pointer;
+
+    &::after {
+      content: '\f105';
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 44px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      border: 1px solid $color-light-grey;
+      border-radius: 0 5px 5px 0;
+      background-color: $color-light-grey;
+
+      font: var(--fa-font-solid);
+      font-size: 22px;
+      font-weight: 900;
+      color: $color-white;
+    }
+  }
+}
+
+.list-icon {
+  display: flex;
+  width: 42px;
+  height: 42px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $color-font-light;
+  border-radius: 50%;
+  font-size: 22px;
+  color: $color-font-hover;
+}
+
+.order-products-quant {
+  font-size: 22px;
+  line-height: 1;
+  color: $color-font-hover;
+
+  &__label {
+    font-size: 15px;
+    line-height: 1;
+    color: $color-font-light;
+  }
+}

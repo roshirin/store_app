@@ -1,0 +1,7 @@
+.search-bar {
+  &__reset-button {
+    &:disabled {
+      border-color: #dee2e6;
+    }
+  }
+}

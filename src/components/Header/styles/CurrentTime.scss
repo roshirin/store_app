@@ -1,0 +1,22 @@
+@import 'src/styles/utils/custom-variables';
+
+.blinking-colon {
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.clock-icon {
+  color: $color-medium-green;
+  margin-right: 10px;
+}
