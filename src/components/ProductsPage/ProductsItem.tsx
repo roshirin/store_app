@@ -27,7 +27,7 @@ export const ProductsItem: FC<Props> = ({ product }) => {
     preparedDates,
   } = product;
 
-  const imageSrc = `src/images/produsts/${photo}`;
+  const imageSrc = `/images/produsts/${photo}`;
 
   const primePrice = product.price.find((price) => price.isDefault === 1)!;
   const secondaryPrice = product.price.find((price) => price.isDefault === 0)!;

@@ -10,7 +10,7 @@ export const Header = () => {
         <Row className="header__content">
           <Col xs={2} className="header__logo logo">
             <Link className="logo__image text-decoration-none" to="/">
-              <img src="/src/images/site-logo.jpg"></img>
+              <img src="/images/site-logo.jpg"></img>
               <span className="logo__title">Inventory</span>
             </Link>
           </Col>
