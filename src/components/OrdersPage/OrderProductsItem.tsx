@@ -17,7 +17,7 @@ export const OrderProductsItem: FC<Props> = ({ product }) => {
 
   const { id, title, serialNumber, photo, specification } = product;
 
-  const imageSrc = `/images/produsts/${photo}`;
+  const imageSrc = `./images/produsts/${photo}`;
 
   const handleDelete = () => {
     dispatch(showDeleteProductModal(id));
